@@ -39,13 +39,13 @@ class KtorClient {
     }
 
 
-    // https://pixabay.com/api/?key=40308333-07c19e899666cb68334ed3a46&q=yellow+flowers&page=1&per_page=10
+    // https://pixabay.com/api/?key=YOUR-API-KEY&q=yellow+flowers&page=1&per_page=10
 
     suspend fun getImages(q: String, page: Int, perPage: Int): PixabayResponse {
         return getClient().get {
             url {
                 path("/api/")
-                parameter("key", "40308333-07c19e899666cb68334ed3a46")
+                parameter("key", "your api key")
                 parameter("q", q)
                 parameter("page", page)
                 parameter("per_page", perPage)
