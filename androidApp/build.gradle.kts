@@ -47,4 +47,6 @@ dependencies {
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.android)
 
+    implementation(libs.android.paging.common)
+
 }
