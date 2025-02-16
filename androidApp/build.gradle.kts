@@ -47,6 +47,9 @@ dependencies {
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.android)
 
-    implementation(libs.android.paging.common)
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 
+    implementation(libs.android.paging.common)
+    implementation(libs.paging.compose.common)
 }
