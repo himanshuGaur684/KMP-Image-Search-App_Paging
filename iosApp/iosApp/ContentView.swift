@@ -39,7 +39,7 @@ struct ContentView: View {
                             if let pixabayImage = viewModel.getElement(index: Int32(index)){
                                 AsyncImage(url: URL(string: pixabayImage.largeImageURL)) { image in
                                     image.resizable()
-                                        .aspectRatio(contentMode: .fit)
+                                        .aspectRatio(contentMode: .fill)
                                         .frame(height: 300)
                                         .frame(maxWidth: .infinity)
                                         .clipped()
